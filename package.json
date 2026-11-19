@@ -1,0 +1,19 @@
+{
+  "name": "dinota-desktop",
+  "version": "1.4.0",
+  "description": "DiNota, a PDF annotator, as a desktop application for Windows, macOS and Linux",
+  "scripts": {
+    "setup": "node scripts/prepare.mjs && neu update",
+    "prepare": "node scripts/prepare.mjs",
+    "dev": "node scripts/prepare.mjs && neu run",
+    "build": "node scripts/package.mjs"
+  },
+  "author": "Dr. Kawther Aboalam",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@neutralinojs/neu": "^11.8.0",
+    "png2icons": "^2.0.1",
+    "yazl": "^3.3.1"
+  },
+  "private": true
+}

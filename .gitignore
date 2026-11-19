@@ -1,0 +1,13 @@
+node_modules/
+
+# Neutralinojs runtime, downloaded by "npm run setup"
+/bin/
+
+# Generated from src/DiNota.html by scripts/prepare.mjs
+/resources/
+
+# Build output
+/dist/
+.tmp/
+.storage/
+*.log

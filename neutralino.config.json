@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
+  "applicationId": "de.aboalam.dinota",
+  "applicationName": "DiNota",
+  "applicationIcon": "assets/icon.png",
+  "author": "Dr. Kawther Aboalam",
+  "description": "DiNota PDF annotator",
+  "copyright": "© 2026 Dr. Kawther Aboalam & AI Agents",
+  "version": "1.4.0",
+  "defaultMode": "window",
+  "port": 47613,
+  "documentRoot": "/resources/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "dataLocation": "system",
+  "logging": {
+    "enabled": false,
+    "writeToLogFile": false
+  },
+  "nativeAllowList": [
+    "app.exit",
+    "events.*",
+    "window.setTitle",
+    "window.setFullScreen",
+    "window.exitFullScreen",
+    "os.showSaveDialog",
+    "os.getPath",
+    "os.open",
+    "filesystem.readBinaryFile",
+    "filesystem.writeBinaryFile"
+  ],
+  "modes": {
+    "window": {
+      "title": "DiNota",
+      "width": 1280,
+      "height": 860,
+      "minWidth": 720,
+      "minHeight": 520,
+      "center": true,
+      "fullScreen": false,
+      "alwaysOnTop": false,
+      "icon": "/resources/icons/appIcon.png",
+      "enableInspector": false,
+      "borderless": false,
+      "maximize": false,
+      "hidden": false,
+      "resizable": true,
+      "exitProcessOnClose": false,
+      "useSavedState": true
+    }
+  },
+  "cli": {
+    "binaryName": "DiNota",
+    "resourcesPath": "/resources/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/resources/js/neutralino.js",
+    "binaryVersion": "6.10.0",
+    "clientVersion": "6.10.0"
+  }
+}
