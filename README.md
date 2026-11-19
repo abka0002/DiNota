@@ -1,4 +1,4 @@
-# DiNota Desktop
+# DiNota 
 
 DiNota is a free PDF annotator: highlight, write, comment, stamp, draw and present. Everything runs on your own computer and nothing is uploaded.
 
