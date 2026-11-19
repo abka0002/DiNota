@@ -9,7 +9,7 @@
     "build": "node scripts/package.mjs"
   },
   "author": "Dr. Kawther Aboalam",
-  "license": "UNLICENSED",
+  "license": "GPL-3.0-only",
   "devDependencies": {
     "@neutralinojs/neu": "^11.8.0",
     "png2icons": "^2.0.1",

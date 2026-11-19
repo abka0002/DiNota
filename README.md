@@ -1,6 +1,6 @@
 # DiNota Desktop
 
-DiNota is a PDF annotator: highlight, write, comment, stamp, draw and present. Everything runs on your own computer and nothing is uploaded.
+DiNota is a free PDF annotator: highlight, write, comment, stamp, draw and present. Everything runs on your own computer and nothing is uploaded.
 
 This repository turns the single-file web app (`src/DiNota.html`) into a desktop application for Windows, macOS and Linux, using a small [Neutralinojs](https://neutralino.js.org) shell around the system web view.
 
@@ -60,11 +60,15 @@ scripts/package.mjs      builds and packages all platforms
 
 ## Good to know
 
-- **Unsigned builds.** Windows SmartScreen shows "Windows protected your PC" (More info → Run anyway). macOS refuses the first launch; right-click the app → Open, or run `xattr -cr DiNota.app`. Selling the app comfortably needs a Windows code-signing certificate and an Apple Developer ID with notarisation.
+- **Unsigned builds.** Windows SmartScreen shows "Windows protected your PC" (More info → Run anyway). macOS refuses the first launch; right-click the app → Open, or run `xattr -cr DiNota.app`. Removing these warnings needs a Windows code-signing certificate and an Apple Developer ID with notarisation.
 - **One window at a time.** The app serves itself on a fixed local port (47613) so that saved annotations survive a restart. Starting DiNota a second time while it is running does nothing.
 - **Web view.** Windows uses WebView2 (part of Windows 10/11), macOS uses WKWebView, Linux needs WebKitGTK (`libwebkit2gtk-4.1`).
 - **Permissions.** The shell may only show save dialogs, read and write the files you choose, open links and files with the system default app, and control its own window. See `nativeAllowList` in `neutralino.config.json`.
 
 ## License
 
-Proprietary, all rights reserved. See [LICENSE](LICENSE) and [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+DiNota is free software: you can use, study, share and change it under the terms of the [GNU General Public License, version 3](LICENSE). It comes without any warranty. If you distribute a modified version, you must publish its source under the same license.
+
+Copyright © 2026 Dr. Kawther Aboalam.
+
+The bundled third-party components keep their own licenses; see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
